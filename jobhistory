@@ -1,2 +1,6 @@
 https://www.cnblogs.com/juncaoit/p/6393998.html
 user@host151:~/ZhaoJunxian/spark$ ./sbin/start-history-server.sh hdfs://10.60.150.151:9000/spark-eventlog
+
+DFS 50070
+Cluster 8088
+JobHistory 18080
