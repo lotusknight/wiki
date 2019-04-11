@@ -1,0 +1,1 @@
+user@host151:~/ZhaoJunxian/spark$ ./sbin/start-history-server.sh hdfs://10.60.150.151:9000/spark-eventlog
