@@ -1,0 +1,50 @@
+C++ STL
+ACM c datastructure
+
+
+leetcode 1.Two Sum
+
+
+#include "pch.h"
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+using namespace std;
+
+int main()
+{
+	vector<int> twoSum(vector<int>& nums, int target);
+	vector<int> numbers;
+	int target;
+	int n,temp;
+	cin >> n;
+	for (int i = 0; i < n; i++)
+	{
+		cin >> temp;
+		numbers.push_back(temp);
+	}
+	cin >> target;
+	twoSum(numbers,target);
+    std::cout << "Hello World!\n"; 
+}
+
+vector<int> twoSum(vector<int>& nums, int target) {
+	unordered_map<int, int> hash;
+	vector<int> result;
+	for (int i = 0; i < nums.size(); i++)
+	{
+		cout << "out  "<<i<<endl;
+		// hash[nums[i]] = i;     //Why here is wrong? if 3 3,2,4 6 if will be called at the first cycle,  because 3+3=6, it will find itself if put if first
+		if (hash.find(target - nums[i]) != hash.end()) // not find so == hash.end
+		{
+			cout << "in"<<endl;
+			cout << i << " " << hash[target - nums[i]] << endl;
+			result.push_back(hash[target - nums[i]]);
+			result.push_back(i);
+			break;
+		}
+		            hash[nums[i]]=i;
+	}
+	return result;
+
+}

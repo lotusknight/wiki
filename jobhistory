@@ -1,0 +1,16 @@
+https://www.cnblogs.com/juncaoit/p/6393998.html
+user@host151:~/ZhaoJunxian/spark$ ./sbin/start-history-server.sh hdfs://10.60.150.151:9000/spark-eventlog
+
+hadoop namenode -format
+
+zhangsf@hadoop1:~$ hdfs dfs -put /home/zhangsf/aaa.txt  /input
+zhangsf@hadoop1:~$ hdfs dfs  -ls /input
+Found 1 items
+-rw-r--r--   2 zhangsf supergroup         89 2018-06-12 06:03 /input/aaa.txt
+原文：https://blog.csdn.net/zhangvalue/article/details/80671217 
+
+
+
+DFS 50070
+Cluster 8088
+JobHistory 18080
