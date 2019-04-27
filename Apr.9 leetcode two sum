@@ -2,7 +2,7 @@
 // ACM c datastructure
 
 // leetcode 1.Two Sum
-```
+
 #include "pch.h"
 #include <iostream>
 #include <vector>
@@ -46,4 +46,4 @@ vector<int> twoSum(vector<int>& nums, int target) {
 	return result;
 
 }
-```
+
